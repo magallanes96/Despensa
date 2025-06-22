@@ -3,11 +3,11 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 
 // Conexión a Azure SQL
-$serverName = "tcp:TU-SERVIDOR.database.windows.net,1433";
+$serverName = "sqlsrv:server = tcp:memo96.database.windows.net,1433";
 $connectionOptions = array(
-    "Database" => "TU_BD",
-    "Uid" => "TU_USUARIO",
-    "PWD" => "TU_CONTRASEÑA",
+    "Database" => "SafePass",
+    "Uid" => "memo96",
+    "PWD" => "Hmcrgl09",
     "Encrypt" => true
 );
 
