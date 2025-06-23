@@ -22,7 +22,7 @@ if (!$conn) {
 }
 
 $usuario = $data->usuario;
-$contrasena = $data->contrasena;
+$contrasena = $data->password;
 
 $sql = "SELECT * FROM inicio_sesion WHERE usuario = ? AND password = ?";
 $params = array($usuario, $contrasena);
