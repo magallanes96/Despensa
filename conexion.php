@@ -24,7 +24,7 @@ if (!$conn) {
 $usuario = $data->usuario;
 $contrasena = $data->contrasena;
 
-$sql = "SELECT * FROM usuarios WHERE usuario = ? AND contrasena = ?";
+$sql = "SELECT * FROM inicio_sesion WHERE usuario = ? AND password = ?";
 $params = array($usuario, $contrasena);
 $stmt = sqlsrv_query($conn, $sql, $params);
 
